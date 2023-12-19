@@ -4,15 +4,14 @@
         {
           "Title": "الرئيسية",
           "Link": "#hero"
+        },
+        
+        {
+          "Title":"البطاقة الذكية",
+          "Link": "intellegent"
         },{
-          "Title": "من نحن",
-          "Link": "#who-we-are"
-        },{
-          "Title": "البعد الاستراتيجي",
-          "Link": "#strategic-dimension"
-        },{
-          "Title": "أهدافنا",
-          "Link": "#our-goals"
+          "Title":"تواصل معنا",
+          "Link": "contact"
         }
       ]
     },

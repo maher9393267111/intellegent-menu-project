@@ -13,7 +13,7 @@ import { useState , useEffect } from 'react';
 
 
 // ReactDOM.createPortal
-const OverlayMobileMenu = ({ isOpen, close }) => {
+const OverlayMobileMenu = ({ isOpen, close ,handleClickScroll }) => {
   return ReactDOM.createPortal(
     <div className={cn('fixed inset-0 bg-white z-50 block md:!hidden text-ngc_dark', { "hidden": !isOpen })}>
       <div className='px-2 h-20 flex items-center justify-between border-b'>
@@ -32,7 +32,8 @@ const OverlayMobileMenu = ({ isOpen, close }) => {
                 key={index} 
                 onClick={(e) => {
                   close();
-                  smoothScrollIntoSection(e, item.Link.split('#')[1])
+                  handleClickScroll(item.Link)
+                  // smoothScrollIntoSection(e, item.Link.split('#')[1])
                 }}
                 className='text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md cursor-pointer transition-all'>
                   {item.Title}
@@ -58,6 +59,17 @@ const Header = () => {
     setIsBrowser(true);
   }, []);
 
+
+  const handleClickScroll = (section) => {
+    console.log('aaaaaa')
+    const element = document.getElementById(section);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
 //   ReactDOM.createPortal
 
 const Main = (
@@ -75,7 +87,8 @@ const Main = (
               HeaderSection.MenuItems.map((item, index) => (
                 <a 
                   key={index} 
-                  onClick={(e) => smoothScrollIntoSection(e, item.Link.split('#')[1])}
+                   onClick={()=>handleClickScroll(item.Link)}
+                  //  onClick={(e) => smoothScrollIntoSection(e, item.Link.split('#')[1])}
                   rel='noopener noreferrer'
                   className='text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md cursor-pointer transition-all'>
                     {item.Title}
@@ -104,7 +117,7 @@ const Main = (
           </button>
         </div>
         {/* overlay menu on mobile */}
-        <OverlayMobileMenu isOpen={isOpen} close={toggleMenu} />
+        <OverlayMobileMenu handleClickScroll={handleClickScroll} isOpen={isOpen} close={toggleMenu} />
       </div>
     </motion.div>
    

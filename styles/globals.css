@@ -16,13 +16,71 @@
   }
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../public/fonts/Bahij_TheSansArabic-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../public/fonts/Bahij_TheSansArabic-SemiLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/fonts/Bahij_TheSansArabic-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/Bahij_TheSansArabic-Plain.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/Bahij\ Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/Bahij Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/Bahij_TheSansArabic-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bahij';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../public/fonts/Bahij_TheSansArabic-Black 10.ttf') format('truetype');
+}
+
+
+
 body {
+  font-family: 'Bahij';
+  scroll-behavior: smooth;
   overflow-x: hidden !important;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
