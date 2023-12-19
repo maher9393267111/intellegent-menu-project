@@ -46,7 +46,7 @@ const Contact = () => {
       console.log("response", res?.status);
 
       if (res.status === 200) {
-        toast.success(" your message sent successfully");
+        toast.success(" تم ارسال الرسالة بنجاح");
       }
     
 
@@ -54,11 +54,12 @@ const Contact = () => {
 
 
       setIsLoading(false);
-    //   setName("");
-    //   setEmail("");
-    //   setSubject("");
-    //   setMessage("");
-      toast.success("Message sent successfully!", {
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+      setPhone("")
+      toast.success("تم ارسال الرسالة بنجاح!", {
         position: "top-right",
         autoClose: 5000,
        
@@ -70,7 +71,7 @@ const Contact = () => {
       });
     } catch (error) {
       setIsLoading(false);
-      toast.error("Failed to send message", {
+      toast.error("فشل ارسال الرسالة", {
         position: "top-right",
         autoClose: 5000,
         
@@ -96,7 +97,7 @@ const Contact = () => {
         phone
       });
     } else {
-      toast.error("Please fill all the fields", {
+      toast.error("الرجاء ملأ جميع المدخلات", {
         position: "top-right",
         autoClose: 5000,
         
@@ -300,7 +301,7 @@ const Contact = () => {
                       </a>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <a
                         className="text-gray-200 hover:text-green-400 transition-all "
                         target="_blank"
@@ -311,7 +312,9 @@ const Contact = () => {
                         <span className="sr-only">Instagram</span>
                         <FaPhoneSquare className="w-6 h-6" />
                       </a>
-                    </li>
+                    </li> */}
+
+
                     <li>
                       <a
                         className="text-gray-200 hover:text-blue-600 transition-all "
@@ -324,7 +327,7 @@ const Contact = () => {
                         <FacebookIcon className="w-6 h-6" />
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         className="text-gray-200 hover:text-blue-500 transition-all "
                         target="_blank"
@@ -335,7 +338,7 @@ const Contact = () => {
                         <span className="sr-only">Twitter</span>
                         <TwitterIcon className="w-6 h-6" />
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         className="text-gray-200"
@@ -485,16 +488,16 @@ name="" id="">
                         />
                       </div>
                     </div>
-                    <div className="sm:col-span-2 sm:flex sm:justify-end">
+                    <div className="sm:col-span-2 sm:flex sm:justify-start">
                       <button
                         type="submit"
-                        className="mt-2 disabled:opacity-50 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 dark:bg-dark-300 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:w-auto"
+                        className="mt-2 disabled:opacity-50 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 dark:bg-dark-300 !bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:w-auto"
                         disabled={isLoading}
                       >
                         {isLoading && (
                           <SpinnerIcon className="w-5 h-5 aspect-square mr-2 text-white animate-spin dark:text-gray-600 fill-blue-600 dark:fill-primary-400" />
                         )}
-                        {isLoading ? "Sending..." : "Submit"}
+                        {isLoading ? "جاري الارسال..." : "ارسل"}
                       </button>
                     </div>
                   </form>

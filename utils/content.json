@@ -27,8 +27,11 @@
   
     "SocialMediaUrls": {
       "Twitter": null,
-      "Instagram": null,
-      "LinkedIn": "https://www.linkedin.com/company/national-grain-company"
+      "Instagram":"https://www.instagram.com/logic.4tech/?hl=ar",
+      "Facebook": "https://www.facebook.com/profile.php?id=61554600908983",
+      "website":"https://www.getmenu.ps", 
+      
+      "LinkedIn": null
     },
     "CarouselCards": [
       {

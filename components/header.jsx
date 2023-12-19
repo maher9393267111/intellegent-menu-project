@@ -3,7 +3,7 @@ import cn from 'classnames';
 import ReactDOM from 'react-dom';
 // import logo from '../assets/ngc/logo.png';
 // import logo_light from '../assets/ngc/logo-light.png';
-import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn, FaInstagram as InstagramIcon , FaFacebook as FaceIcon } from 'react-icons/fa';
 import { RiTwitterXLine, RiCloseFill } from 'react-icons/ri';
 import { FiMenu } from 'react-icons/fi';
 import { HeaderSection, SocialMediaUrls } from "../utils/content.json";
@@ -99,15 +99,42 @@ const Main = (
         </div>
         <div className='max-md:hidden'>
           <div className='flex items-center gap-2'>
-            <a href={SocialMediaUrls.Twitter || undefined} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
+            {/* <a href={SocialMediaUrls.Twitter || undefined} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
               <RiTwitterXLine />
+            </a> */}
+              <a
+              className="text-gray-500 text-xs hover:text-blue-500 transition-all "
+              target="_blank"
+              href={SocialMediaUrls.Facebook || undefined} 
+              rel="noreferrer nofollow"
+              title="Twitter"
+            >
+              <span className="sr-only">Twitter</span>
+              <FaceIcon className="w-6 h-6" />
             </a>
-            <a href={SocialMediaUrls.LinkedIn || undefined} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
-              <FaLinkedinIn />
+
+         
+            <a
+              className="text-gray-500 hover:text-pink-400 transition-all "
+              target="_blank"
+              href={SocialMediaUrls.Instagram || undefined} 
+              rel="noreferrer nofollow"
+              title="Instagram"
+            >
+              <span className="sr-only">Instagram</span>
+              <InstagramIcon className="w-6 h-6" />
             </a>
-            <a href={SocialMediaUrls.Instagram || undefined} target='_blank' rel="noopener" className='text-[1.7rem] relative hover:-top-0.5'>
-              <FaInstagram />
-            </a>
+
+
+
+<a href={SocialMediaUrls.website || undefined}>
+
+
+<img className='w-8 h-8 object-cover' src="https://www.getmenu.ps/assets/img/logo_2.png" alt="" />
+
+</a>
+
+
           </div>
         </div>
         {/* open button on mobile */}
