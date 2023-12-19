@@ -22,8 +22,9 @@ export default function Footer() {
               <div className="sm:flex sm:items-center sm:justify-between">
                 <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
                    {new Date().getFullYear()}{" "}
-                  <Link href="/">
-               @     {/* Tadashi */}
+                  <Link className='px-1 text-black  font-semibold' href="/">
+                   {/* Tadashi */}
+               LogicTech
                   </Link>
                   جميع الحقوق محفوظة
                  
