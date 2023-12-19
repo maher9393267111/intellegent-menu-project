@@ -118,7 +118,7 @@ const Contact = () => {
         <div className="bg-gray-50 dark:bg-dark-500">
           <div className="relative z-10 overflow-hidden py-8">
             <div className="max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-extrabold text-black tracking-tight   sm:text-5xl lg:text-6xl">
               تواصل معنا
               </h1>
               <p className="mt-6 text-xl text-gray-500 dark:text-gray-200 max-w-3xl">
@@ -357,7 +357,7 @@ const Contact = () => {
                   </ul>
                 </div>
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-gray-200">
+                  <h3 className="text-lg font-medium text-black ">
                   أرسل لنا رسالة
                   </h3>
                   <form
@@ -368,14 +368,14 @@ const Contact = () => {
                     <div>
                       <label
                         htmlFor="first_name"
-                        className="block text-sm font-medium text-gray-900 dark:text-gray-200"
+                        className="block text-sm font-medium text-black "
                       >
                         الاسم
                       </label>
                       <div className="mt-1">
                         <input
                           type="text"
-                          className="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-200 focus:ring-gray-500 focus:border-gray-500 border border-gray-300 dark:border-dark-100 dark:bg-dark-600 rounded-md"
+                          className="py-3 px-4 block w-full shadow-sm text-black  focus:ring-gray-500 focus:border-gray-500 border border-gray-300 dark:border-dark-100 dark:bg-dark-600 rounded-md"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           disabled={isLoading}
@@ -386,7 +386,7 @@ const Contact = () => {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-900 dark:text-gray-200"
+                        className="block text-sm font-medium text-black"
                       >
                        الإيميل
                       </label>
@@ -407,14 +407,14 @@ const Contact = () => {
                     <div className=" sm:col-span-2">
                       <label
                         htmlFor="first_name"
-                        className="block text-sm font-medium text-gray-900 dark:text-gray-200"
+                        className="block text-sm font-medium text-black "
                       >
                        رقم الهاتف
                       </label>
                       <div className="mt-1">
                         <input
                           type="text"
-                          className="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-200 focus:ring-gray-500 focus:border-gray-500 border border-gray-300 dark:border-dark-100 dark:bg-dark-600 rounded-md"
+                          className="py-3 px-4 block w-full shadow-sm text-black focus:ring-gray-500 focus:border-gray-500 border border-gray-300 dark:border-dark-100 dark:bg-dark-600 rounded-md"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           disabled={isLoading}
@@ -428,7 +428,7 @@ const Contact = () => {
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="subject"
-                        className="block text-sm font-medium text-gray-900 dark:text-gray-200"
+                        className="block text-sm font-medium text-black"
                       >
                        الخدمة المطلوبة
                       </label>
