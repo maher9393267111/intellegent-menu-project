@@ -74,7 +74,7 @@ const Hero = () => {
 
       <button 
         type='button' 
-        className='absolute left-1/2 -translate-x-1/2 bottom-5 transition-all hover:bottom-6 rounded-full bg-[#00000050] hover:bg-[#00000090] p-3'
+        className='absolute left-1/2 -translate-x-1/2 bottom-5  hidden md:block transition-all hover:bottom-6 rounded-full bg-[#00000050] hover:bg-[#00000090] p-3'
         onClick={scrollNextSection}
       >
         <span className='text-ngc_white text-2xl w-8 h-8 bg-ngc_brown'><FiArrowDown /></span>
