@@ -12,6 +12,7 @@ export default function Document() {
 
 
       <link rel="icon" href="/site-icon.png" />
+      <link rel="preconnect" href="https://www.logictech.pro" />
 
  <link
   rel="apple-touch-icon"
