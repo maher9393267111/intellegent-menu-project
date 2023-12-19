@@ -1,0 +1,53 @@
+{
+    "HeaderSection": {
+      "MenuItems": [
+        {
+          "Title": "الرئيسية",
+          "Link": "#hero"
+        },{
+          "Title": "من نحن",
+          "Link": "#who-we-are"
+        },{
+          "Title": "البعد الاستراتيجي",
+          "Link": "#strategic-dimension"
+        },{
+          "Title": "أهدافنا",
+          "Link": "#our-goals"
+        }
+      ]
+    },
+    "HeroText": {
+      "MainHeader": "قائمة رقمية لا تَلامُسيّة",
+      "SubHeader": "نقدم لك ميزة القائمة الرقمية الخاصة بالمطاعم و المقاهي التي تعمل على هواتف زبائنك الذكية، دون تثبيت أي تطبيق",
+      "SubHeader2":"تسمح للزبائن بمسح رمز QR (باركود سريع) لاستعراض قائمة الطعام الخاصة بالمطعم او المقهى دون الحاجة إلى الاستعانة بالقائمة الورقية.",
+      "Button": {
+        "Title": "ابدأ الآن",
+        "Link": "#who-we-are"
+      }
+    },
+  
+    "SocialMediaUrls": {
+      "Twitter": null,
+      "Instagram": null,
+      "LinkedIn": "https://www.linkedin.com/company/national-grain-company"
+    },
+    "CarouselCards": [
+      {
+        "Title": "412",
+        "SubTitle": "مليون ريال",
+        "Description": "التكلفـة الإجماليـة لهذه الشـراكة في مرحلتها الأولى بحوالي"
+      },{
+        "Title": "ينبع",
+        "SubTitle": "التجاري",
+        "Description": "تقع محطـة مناولة الحبـوب في مينـاء"
+      },{
+        "Title": "3 مليون",
+        "SubTitle": "طن سنوياً",
+        "Description": "تبلـغ الطاقـة الاسـتيعابية للمحطـــة في بدايتهـــــا"
+      },{
+        "Title": "313,000",
+        "SubTitle": "متر مربع",
+        "Description": "تقدر مساحة محطة مناولة الحبوب بحوالي"
+      }
+    ]
+  }
