@@ -23,6 +23,21 @@ export default function Document() {
 <link rel="icon" sizes="16x16" href="/site-icon.png" /> 
 
 <meta property="og:title" content="logictech" />
+
+<meta name="keywords" content="logic, Tech" />
+          <meta name="author" content="logictech" />
+          <link rel="canonical" href="https://itec-it.vercel.app/" />
+          {/* <!-- Add Open Graph tags for social media sharing --> */}
+          <meta property="og:title" content="logictech" />
+          <meta property="og:description" content="logictech logic tech" />
+          
+          <meta property="og:url" content="https://www.logictech.pro" />
+          <meta property="og:type" content="website" />
+          
+      
+
+
+
       </Head>
       <body>
         <Main />
