@@ -3,7 +3,9 @@ import { Resend } from 'resend'
 import EmailTemplate from '@/components/EmailSend/index'
 
 const resend = new Resend(
- "re_gbgr1EEM_AKGZemLqHoEk16qy22piCe1r"
+  "re_GLvoQWW8_7WRkL7XoebQT24dTe29GFTnk"
+//  "re_gbgr1EEM_AKGZemLqHoEk16qy22piCe1r"
+
 //   're_Bk3zRAbt_2Qw8yAT3UNB1EQKgpVPzE1WD'
   );
 
@@ -15,8 +17,9 @@ export default async function sendEmail(req, res) {
 
  const dataRes =   await resend.emails.send({
       from: 'onboarding@resend.dev',
+      to:"skna2605@gmail.com",
      
-     to:'kristalturkey@gmail.com',
+    //  to:'kristalturkey@gmail.com',
       replyTo: data.email,
       subject: `${data.name} `,
       react: <EmailTemplate {...data} />,
