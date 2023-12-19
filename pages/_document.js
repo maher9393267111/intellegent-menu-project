@@ -6,7 +6,7 @@ export default function Document() {
       <Head >
       <title>
             
-          mega teach
+       Logic Tech
             </title>
 
 
@@ -21,7 +21,7 @@ export default function Document() {
 <link rel="icon" sizes="32x32" href="/site-icon.png" />
 <link rel="icon" sizes="16x16" href="/site-icon.png" /> 
 
-<meta property="og:title" content="megateach" />
+<meta property="og:title" content="logictech" />
       </Head>
       <body>
         <Main />
