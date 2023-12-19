@@ -3,6 +3,8 @@
 import { HeroText } from "../utils/content.json";
 import { motion } from "framer-motion";
 import { FiArrowDown, FiArrowLeft } from "react-icons/fi";
+import Image from 'next/image'
+import HeroImage from "../public/hero-img.png";
 
 const Hero = () => {
   const scrollNextSection = () => {
@@ -56,7 +58,7 @@ const Hero = () => {
 
 
       <div className="">
-    <img src="https://www.getmenu.ps/assets/img/hero-img.png" alt="" />
+    <Image width={600} height={600} className=" !w-full !h-full" src={HeroImage} alt="" />
 </div>
 
 
