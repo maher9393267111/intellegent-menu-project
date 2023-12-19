@@ -76,7 +76,9 @@ body {
   font-family: 'Bahij';
   scroll-behavior: smooth;
   overflow-x: hidden !important;
-  color: rgb(var(--foreground-rgb));
+  color:black
+  /* color: rgb(var(--foreground-rgb)); */
+
   /* background: linear-gradient(
       to bottom,
       transparent,
